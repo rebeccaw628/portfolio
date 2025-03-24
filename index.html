@@ -11,3 +11,43 @@
         src="https://kit.fontawesome.com/6d18dc06d5.js" 
         crossorigin="anonymous"
     ></script>
+</head>
+
+<body>
+    <header class="navbar">
+    <!-- Nav Bar Logo -->
+    <p class="navbar__logo"> rebe&lt;&lt;a</p>
+
+    <!-- Nav Menu Container -->
+    <nav class="navbar__menu">
+        <!-- Hamburger Icon -->
+        <input type="checkbox" id="menu-toggle" class="navbar__menu-toggle" />
+        <label 
+        for="menu-toggle"
+        class="navbar__menu__hamburger"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Open Navigation Menu"
+        >&#9776;
+        </label>
+
+        <!-- Nav Bar Links -->
+        <ul class="navbar__menu__links navbar__menu__items" id="nav-links" aria-hidden="true">
+            <li class="navbar__menu__links--text">
+                <a href="#home">home</a>
+            </li>
+            <li class="navbar__menu__links--text">
+                <a href="#skills">skills</a>
+            </li>
+            <li class="navbar__menu__links--text">
+                <a href="#projects">projects</a>
+            </li>
+            <li class="navbar__menu__links--text">
+                <a href="#about">about</a>
+            </li>
+            <li class="navbar__menu__links--text">
+                <a href="#contact">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,113 @@
+@use './partials/palette.scss';
+@use './modules/mixins.scss';
+@use './modules/foundation.scss';
+@use './partials/media-queries.scss' as q;
+
+
+* {
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+//Nav bar styling
+.navbar {
+    border: solid 2px red;
+    @include mixins.flex(row, space-between, nowrap);
+    align-items: center;
+    background-color: palette.$dark-blue;
+    width: 100%;
+    max-width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    @include q.md-up {
+        justify-content: start;
+        
+    }
+    
+    &__logo {
+        @include mixins.outfit-nav(1.7em, 600);
+        text-shadow: 0 0 10px palette.$lighter-blue;
+        padding: 10px;
+        margin-left: 5vw;
+    }
+
+    &__menu {
+        @include mixins.flex(column, end, nowrap);
+        align-items: flex-end;
+        border:solid 2px blue;
+        @include q.md-up {
+            margin-left: 50%;
+            
+        }
+    
+        &__hamburger {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 25px;
+            color: palette.$black;
+            text-shadow: 0 0 2px grey;
+            margin-right: 2vw;
+            border: solid 2px purple;
+
+            // Disappears on larger screens
+            @include q.md-up {
+                display: none;
+            } 
+        }
+        
+        &__links {
+            display: none; //Links hidden on larger screens
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            top: 60px;
+            width: 100%;
+            
+            &--text {
+                list-style: none;
+                margin-right: 2vw;
+                border: solid 2px red; 
+            }
+
+            &--open {
+                display: flex; //Show links on smaller screens
+            }
+        }
+
+        @include q.md-up {
+            &__items {
+                @include mixins.flex(row, space-between, nowrap);
+                margin-right: 5vw;
+                gap: 18px;
+            }
+        }
+
+    }
+
+    // Hide checkbox visually but keep it accessible 
+    &__menu-toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        }
+    
+    // When menu is open, show the links
+    &__menu-toggle:checked + .navbar__menu__hamburger + .navbar__menu__links {
+        @extend .navbar__menu__links--open;
+    }  
+}
+
+.content {
+    @include mixins.flex(column, center, nowrap);
+
+}
+
+.page-block {
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
