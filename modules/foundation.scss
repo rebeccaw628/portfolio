@@ -1,0 +1,9 @@
+@use '../partials/palette.scss';
+@use './mixins.scss';
+
+a {
+    @include mixins.outfit-nav(1.2em, 400);
+    text-shadow: 0 0 10px palette.$lighter-blue;
+    color: palette.$black;
+    text-decoration: none;
+}
