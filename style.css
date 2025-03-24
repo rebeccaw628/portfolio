@@ -115,8 +115,6 @@ a {
   padding-top: 60px;
 }
 
-// Landing Page Styling
-
 .landing {
   display: flex;
   flex-direction: column;
@@ -160,6 +158,107 @@ a {
 }
 .landing__subhead--role {
   color: #10365a;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(#ecf2f9, #c8d9eb, #7CA3C7);
+  height: auto;
+  border: solid 2px green;
+}
+.skills__head {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-left: 5%;
+}
+@media screen and (min-width: 769px) {
+  .skills__head {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.8em;
+    font-weight: 600;
+  }
+}
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 5% 5% 0 5%;
+  gap: 3vh;
+  border: solid 2px blue;
+}
+.skills__type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.skills__type--text {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2em;
+  font-weight: 600;
+}
+@media screen and (min-width: 769px) {
+  .skills__type--text {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.4em;
+    font-weight: 600;
+  }
+}
+.skills__type__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  border: solid 2px purple;
+}
+@media screen and (min-width: 769px) {
+  .skills__type__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.skills__type__item__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+  border: solid 2px pink;
+}
+.skills__type__item__card--text {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+@media screen and (min-width: 769px) {
+  .skills__type__item__card--text {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+}
+.skills__type__item__card--logo {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 769px) {
+  .skills__type__item__card--logo {
+    font-size: 2.8em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

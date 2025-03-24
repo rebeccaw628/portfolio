@@ -144,3 +144,68 @@
         }
     }
 }
+
+// Skills page styling
+
+.skills {
+    @include mixins.flex(column, start, nowrap);
+    background-image: linear-gradient(palette.$lighter-blue, palette.$light-blue, palette.$dark-blue);
+    height: auto;
+    border: solid 2px green;
+
+    &__head {
+        @include mixins.outfit-nav(2.2em, 600);
+        margin-left: 5%;
+        @include q.md-up {
+            @include mixins.outfit-nav(3.8em, 600);
+        }
+    }
+
+    &__container {
+        @include mixins.flex(column, center, nowrap);
+        margin: 5% 5% 0 5%;
+        gap: 3vh;
+        border: solid 2px blue;
+    }
+
+    &__type {
+            @include mixins.flex(column, center, nowrap);
+
+            &--text {
+                @include mixins.outfit-nav(2em, 600);
+                @include q.md-up {
+                    @include mixins.outfit-nav(3.4em, 600);
+                }
+                
+            }
+
+        &__item {
+            @include mixins.flex(row, center, wrap); //Single column for small screens
+            @include q.md-up {
+                @include mixins.flex(row, center, wrap);
+            }
+            gap: 5%;
+            border: solid 2px purple;
+
+            &__card {
+                @include mixins.flex(column, center, wrap);
+                align-items: center;
+                gap: 5%;
+                border: solid 2px pink;
+
+                &--text{
+                    @include mixins.outfit-nav(1.2em, 600);
+                    @include q.md-up {
+                        @include mixins.outfit-nav(2.2em, 600);
+                    }
+                }
+                &--logo {
+                    font-size: 1.5em;
+                    @include q.md-up {
+                        font-size: 2.8em;
+                }
+                }
+            }
+        }
+    }
+}
