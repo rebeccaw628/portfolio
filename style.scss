@@ -209,3 +209,54 @@
         }
     }
 }
+
+// Projects page styling
+.projects {
+    @include mixins.flex(column, space-between, nowrap);
+    height: auto;
+    background-image: linear-gradient(palette.$dark-blue, palette.$light-blue, palette.$lighter-blue, palette.$light-blue,palette.$dark-blue);
+    gap: 50%;
+    border: solid 2px green;
+
+    &__head {
+        @include mixins.outfit-nav(2.5em, 600);
+        margin-left: 5%;
+        @include q.md-up {
+            @include mixins.outfit-nav(3.8em, 600);
+        }
+    }
+
+    &__indiv {
+        @include mixins.flex(column, start, nowrap);
+        align-items: center;
+        border-radius: 25px;
+        background-color: palette.$lighter-blue;
+        border: solid 2px blue;
+        margin: 10%;
+        gap: 5%;
+
+        @include q.md-up {
+            @include mixins.flex(row, start, nowrap);
+        }
+
+        &--thumbnail {
+            width: 200px;
+            height: 250px;
+            border-radius: 25px;
+        }
+
+        &__details {
+            @include mixins.flex(column, start, nowrap);
+            border-radius: 25px;
+            border: solid 2px orange;
+
+            &--name {
+                @include mixins.outfit-nav(2em, 600);
+            }
+
+            &--descrip {
+                @include mixins.outfit-nav(1.2em, 300);
+            }
+        }
+    }
+}

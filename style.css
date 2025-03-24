@@ -261,4 +261,75 @@ a {
   }
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: auto;
+  background-image: linear-gradient(#7CA3C7, #c8d9eb, #ecf2f9, #c8d9eb, #7CA3C7);
+  gap: 50%;
+  border: solid 2px green;
+}
+.projects__head {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-left: 5%;
+}
+@media screen and (min-width: 769px) {
+  .projects__head {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.8em;
+    font-weight: 600;
+  }
+}
+.projects__indiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #ecf2f9;
+  border: solid 2px blue;
+  margin: 10%;
+  gap: 5%;
+}
+@media screen and (min-width: 769px) {
+  .projects__indiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+}
+.projects__indiv--thumbnail {
+  width: 200px;
+  height: 250px;
+  border-radius: 25px;
+}
+.projects__indiv__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap;
+  border-radius: 25px;
+  border: solid 2px orange;
+}
+.projects__indiv__details--name {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2em;
+  font-weight: 600;
+}
+.projects__indiv__details--descrip {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=style.css.map */
