@@ -12,7 +12,6 @@
 
 //Nav bar styling
 .navbar {
-    border: solid 2px red;
     @include mixins.flex(row, space-between, nowrap);
     align-items: center;
     background-color: palette.$dark-blue;
@@ -37,7 +36,6 @@
     &__menu {
         @include mixins.flex(column, end, nowrap);
         align-items: flex-end;
-        border:solid 2px blue;
         @include q.md-up {
             margin-left: 50%;
             
@@ -50,7 +48,6 @@
             color: palette.$black;
             text-shadow: 0 0 2px grey;
             margin-right: 2vw;
-            border: solid 2px purple;
 
             // Disappears on larger screens
             @include q.md-up {
@@ -70,7 +67,6 @@
             &--text {
                 list-style: none;
                 margin-right: 2vw;
-                border: solid 2px red; 
             }
 
             &--open {
@@ -151,7 +147,6 @@
     @include mixins.flex(column, start, nowrap);
     background-image: linear-gradient(palette.$lighter-blue, palette.$light-blue, palette.$dark-blue);
     height: auto;
-    border: solid 2px green;
 
     &__head {
         @include mixins.outfit-nav(2.2em, 600);
@@ -165,7 +160,6 @@
         @include mixins.flex(column, center, nowrap);
         margin: 5% 5% 0 5%;
         gap: 3vh;
-        border: solid 2px blue;
     }
 
     &__type {
@@ -185,13 +179,11 @@
                 @include mixins.flex(row, center, wrap);
             }
             gap: 5%;
-            border: solid 2px purple;
 
             &__card {
                 @include mixins.flex(column, center, wrap);
                 align-items: center;
                 gap: 5%;
-                border: solid 2px pink;
 
                 &--text{
                     @include mixins.outfit-nav(1.2em, 600);
@@ -216,7 +208,6 @@
     height: auto;
     background-image: linear-gradient(palette.$dark-blue, palette.$light-blue, palette.$lighter-blue, palette.$light-blue,palette.$dark-blue);
     gap: 50%;
-    border: solid 2px green;
 
     &__head {
         @include mixins.outfit-nav(2.5em, 600);
@@ -231,7 +222,6 @@
         align-items: center;
         border-radius: 25px;
         background-color: palette.$lighter-blue;
-        border: solid 2px blue;
         margin: 10%;
         gap: 5%;
 
@@ -248,7 +238,6 @@
         &__details {
             @include mixins.flex(column, start, nowrap);
             border-radius: 25px;
-            border: solid 2px orange;
 
             &--name {
                 @include mixins.outfit-nav(2em, 600);
@@ -268,8 +257,6 @@
     height: auto;
     gap: 5%;
     background-image: linear-gradient(palette.$dark-blue, palette.$light-blue, palette.$lighter-blue);
-    // background-color: palette.$dark-blue;
-    border: solid 2px green;
 
     @include q.md-up {
         @include mixins.flex(row, center, nowrap);
@@ -278,9 +265,6 @@
 
     &__container {
         @include mixins.flex(column, space-bewteen, nowrap);
-        
-        border: solid 2px blue;
-
         @include q.md-up {
             @include mixins.flex(column, center, nowrap);
             width: 60%;
@@ -301,7 +285,6 @@
         align-items: center;
         gap: 15px;
         border-radius: 25px;
-        border: solid 2px black;
         @include q.md-up {
             @include mixins.flex(row, center, nowrap);
             width: 90%;
@@ -322,7 +305,6 @@
             @include mixins.outfit-nav(1.2em, 500);
             margin-left: 5%;
             margin-right: 5%;
-            border: solid 2px pink;
         }
     }
 }
@@ -360,7 +342,6 @@
         &--text {
             @include mixins.flex(row, space-between, nowrap);
             align-items: center;
-            border: solid 2px red;
         }
     }
 }

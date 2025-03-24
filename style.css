@@ -16,7 +16,6 @@ a {
 }
 
 .navbar {
-  border: solid 2px red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,7 +48,6 @@ a {
   justify-content: end;
   flex-wrap: nowrap;
   align-items: flex-end;
-  border: solid 2px blue;
 }
 @media screen and (min-width: 769px) {
   .navbar__menu {
@@ -63,7 +61,6 @@ a {
   color: black;
   text-shadow: 0 0 2px grey;
   margin-right: 2vw;
-  border: solid 2px purple;
 }
 @media screen and (min-width: 769px) {
   .navbar__menu__hamburger {
@@ -82,7 +79,6 @@ a {
 .navbar__menu__links--text {
   list-style: none;
   margin-right: 2vw;
-  border: solid 2px red;
 }
 .navbar__menu__links--open, .navbar__menu-toggle:checked + .navbar__menu__hamburger + .navbar__menu__links {
   display: flex;
@@ -167,7 +163,6 @@ a {
   flex-wrap: nowrap;
   background-image: linear-gradient(#ecf2f9, #c8d9eb, #7CA3C7);
   height: auto;
-  border: solid 2px green;
 }
 .skills__head {
   font-family: "Outfit", sans-serif;
@@ -191,7 +186,6 @@ a {
   flex-wrap: nowrap;
   margin: 5% 5% 0 5%;
   gap: 3vh;
-  border: solid 2px blue;
 }
 .skills__type {
   display: flex;
@@ -219,7 +213,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
-  border: solid 2px purple;
 }
 @media screen and (min-width: 769px) {
   .skills__type__item {
@@ -236,7 +229,6 @@ a {
   flex-wrap: wrap;
   align-items: center;
   gap: 5%;
-  border: solid 2px pink;
 }
 .skills__type__item__card--text {
   font-family: "Outfit", sans-serif;
@@ -269,7 +261,6 @@ a {
   height: auto;
   background-image: linear-gradient(#7CA3C7, #c8d9eb, #ecf2f9, #c8d9eb, #7CA3C7);
   gap: 50%;
-  border: solid 2px green;
 }
 .projects__head {
   font-family: "Outfit", sans-serif;
@@ -294,7 +285,6 @@ a {
   align-items: center;
   border-radius: 25px;
   background-color: #ecf2f9;
-  border: solid 2px blue;
   margin: 10%;
   gap: 5%;
 }
@@ -317,7 +307,6 @@ a {
   justify-content: start;
   flex-wrap: nowrap;
   border-radius: 25px;
-  border: solid 2px orange;
 }
 .projects__indiv__details--name {
   font-family: "Outfit", sans-serif;
@@ -341,7 +330,6 @@ a {
   height: auto;
   gap: 5%;
   background-image: linear-gradient(#7CA3C7, #c8d9eb, #ecf2f9);
-  border: solid 2px green;
 }
 @media screen and (min-width: 769px) {
   .about {
@@ -357,7 +345,6 @@ a {
   flex-direction: column;
   justify-content: space-bewteen;
   flex-wrap: nowrap;
-  border: solid 2px blue;
 }
 @media screen and (min-width: 769px) {
   .about__container {
@@ -391,7 +378,6 @@ a {
   align-items: center;
   gap: 15px;
   border-radius: 25px;
-  border: solid 2px black;
 }
 @media screen and (min-width: 769px) {
   .about__card {
@@ -421,7 +407,6 @@ a {
   font-weight: 500;
   margin-left: 5%;
   margin-right: 5%;
-  border: solid 2px pink;
 }
 
 .contact {
@@ -477,7 +462,6 @@ a {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  border: solid 2px red;
 }
 
 /*# sourceMappingURL=style.css.map */
