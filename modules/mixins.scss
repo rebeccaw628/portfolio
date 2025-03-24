@@ -1,0 +1,22 @@
+@use "../partials/typography" as t;
+@use "../partials/palette";
+
+@mixin outfit-nav ($size, $weight) {
+    font-family: t.$font-outfit;
+    color: palette.$black;
+    font-size: $size;
+    font-weight: $weight;
+    
+}
+
+@mixin flex (
+    $direction: column,
+    $justify: center,
+    // $align: center,
+    $wrap: nowrap
+) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
