@@ -111,3 +111,36 @@
     height: 100vh;
     padding-top: 60px;
 }
+
+// Landing Page Styling
+
+.landing {
+    @include mixins.flex(column, center, nowrap);
+    background-image: linear-gradient(palette.$dark-blue, palette.$light-blue, palette.$lighter-blue);
+    gap: 4vh;
+    
+
+    &__head {
+        @include mixins.outfit-nav(2.5em, 600);
+        margin: 5%;
+        @include q.md-up {
+            @include mixins.outfit-nav(4.5em, 600);
+        }
+
+        &--name {
+            color: palette.$darkest-blue;
+        }
+    }
+
+    &__subhead {
+        @include mixins.outfit-nav(1.7em, 600);
+        margin: 5%;
+        @include q.md-up {
+            @include mixins.outfit-nav(3.7em, 600);
+        }
+
+        &--role {
+            color: palette.$darkest-blue;
+        }
+    }
+}

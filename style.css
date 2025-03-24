@@ -115,4 +115,51 @@ a {
   padding-top: 60px;
 }
 
+// Landing Page Styling
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(#7CA3C7, #c8d9eb, #ecf2f9);
+  gap: 4vh;
+}
+.landing__head {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 5%;
+}
+@media screen and (min-width: 769px) {
+  .landing__head {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 4.5em;
+    font-weight: 600;
+  }
+}
+.landing__head--name {
+  color: #10365a;
+}
+.landing__subhead {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin: 5%;
+}
+@media screen and (min-width: 769px) {
+  .landing__subhead {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.7em;
+    font-weight: 600;
+  }
+}
+.landing__subhead--role {
+  color: #10365a;
+}
+
 /*# sourceMappingURL=style.css.map */
