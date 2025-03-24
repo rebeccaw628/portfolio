@@ -332,4 +332,152 @@ a {
   font-weight: 300;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: auto;
+  gap: 5%;
+  background-image: linear-gradient(#7CA3C7, #c8d9eb, #ecf2f9);
+  border: solid 2px green;
+}
+@media screen and (min-width: 769px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 10%;
+  }
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-bewteen;
+  flex-wrap: nowrap;
+  border: solid 2px blue;
+}
+@media screen and (min-width: 769px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 60%;
+  }
+}
+.about__head {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-left: 5%;
+}
+@media screen and (min-width: 769px) {
+  .about__head {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.8em;
+    font-weight: 600;
+  }
+}
+.about__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+  border-radius: 25px;
+  border: solid 2px black;
+}
+@media screen and (min-width: 769px) {
+  .about__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin-left: 2vw;
+  }
+}
+.about__card__image {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 20px grey;
+}
+.about__card__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 12px;
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: solid 2px pink;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 769px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 20px;
+}
+.contact__head {
+  font-family: "Outfit", sans-serif;
+  color: black;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+@media screen and (min-width: 769px) {
+  .contact__head {
+    font-family: "Outfit", sans-serif;
+    color: black;
+    font-size: 3.8em;
+    font-weight: 600;
+  }
+}
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.contact__details--logo {
+  font-size: 2em;
+}
+.contact__details--text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  border: solid 2px red;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -260,3 +260,107 @@
         }
     }
 }
+
+// About Section Styling
+.about {
+    @include mixins.flex(column, center, nowrap);
+    align-items: center;
+    height: auto;
+    gap: 5%;
+    background-image: linear-gradient(palette.$dark-blue, palette.$light-blue, palette.$lighter-blue);
+    // background-color: palette.$dark-blue;
+    border: solid 2px green;
+
+    @include q.md-up {
+        @include mixins.flex(row, center, nowrap);
+        padding-bottom: 10%;
+    }
+
+    &__container {
+        @include mixins.flex(column, space-bewteen, nowrap);
+        
+        border: solid 2px blue;
+
+        @include q.md-up {
+            @include mixins.flex(column, center, nowrap);
+            width: 60%;
+            
+        }
+    }
+
+    &__head {
+        @include mixins.outfit-nav(2.5em, 600);
+        margin-left: 5%;
+        @include q.md-up {
+            @include mixins.outfit-nav(3.8em, 600);
+        }
+    }
+    
+    &__card {
+        @include mixins.flex(column, space-between, nowrap);
+        align-items: center;
+        gap: 15px;
+        border-radius: 25px;
+        border: solid 2px black;
+        @include q.md-up {
+            @include mixins.flex(row, center, nowrap);
+            width: 90%;
+            margin-left: 2vw;
+            
+        }
+
+        &__image {
+            height: 300px;
+            width: 300px;
+            border-radius: 200px;
+            box-shadow: 0px 0px 20px grey;
+        }
+
+        &__intro {
+            @include mixins.flex(column, space-between, nowrap);
+            gap: 12px;
+            @include mixins.outfit-nav(1.2em, 500);
+            margin-left: 5%;
+            margin-right: 5%;
+            border: solid 2px pink;
+        }
+    }
+}
+
+// Styling for contact page
+.contact {
+    @include mixins.flex(column, center, nowrap);
+    @include q.md-up {
+        @include mixins.flex(row, center, nowrap);
+    }
+
+    &__container {
+        @include mixins.flex(column, center, nowrap);
+        margin-top: 10%;
+        margin-bottom: 10%;
+        gap: 20px;
+        
+    }
+
+    &__head {
+        @include mixins.outfit-nav(2.5em, 600);
+        @include q.md-up {
+            @include mixins.outfit-nav(3.8em, 600);
+        }
+    }
+
+    &__details {
+        @include mixins.flex(column, space-between, nowrap);
+        gap:5px;
+
+        &--logo {
+            font-size: 2em;
+        }
+
+        &--text {
+            @include mixins.flex(row, space-between, nowrap);
+            align-items: center;
+            border: solid 2px red;
+        }
+    }
+}
